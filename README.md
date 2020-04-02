@@ -42,3 +42,8 @@ Because it's nicer to use an object than a hash, especially when the keys are st
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/yb66/Docopted
+
+## Licence
+
+See the LICENCE file.
+
