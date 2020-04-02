@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/docopted.rb"
+require "awesome_print"
+
+module MyCLI
+  extend Docopted
+  VERSION = "1.0.0"
+  USAGE = <<-USAGE
+    Naval Fate.
+
+    Usage:
+      naval_fate.py ship new <name>...
+      naval_fate.py ship <name> move <x> <y> [--speed=<kn>]
+      naval_fate.py ship shoot <x> <y>
+      naval_fate.py mine (set|remove) <x> <y> [--moored | --drifting]
+      naval_fate.py (-h | --help)
+      naval_fate.py --version
+
+    Options:
+      -h --help     Show this screen.
+      --version     Show version.
+      --speed=<kn>  Speed in knots [default: 10].
+      --moored      Moored (anchored) mine.
+      --drifting    Drifting mine.
+  USAGE
+end
+
+ap ARGV
+
+parsed = MyCLI.parse!
+ap parsed.original_docopt
+ap parsed.available_methods
+
+exit 0
