@@ -2,7 +2,7 @@
 
 ## What?
 
-It objectifies the Docopt parsed options.
+It objectifies the [Docopt](https://github.com/docopt/docopt.rb) parsed options.
 
 ## Why?
 
