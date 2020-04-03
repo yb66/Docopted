@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["helpful-iain@theprintedbird.com"]
 
   spec.summary       = %q{Objectify the options parsed by Docopt}
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  end
+  spec.files         = ["lib/Docopted.rb",
+"lib/Docopted/version.rb", "LICENCE", "README.md", "Gemfile", "Docopted.gemspec"]
   spec.require_paths = ["lib"]
 
   spec.add_dependency "docopt"
