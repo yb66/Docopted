@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
 "lib/Docopted/version.rb", "LICENCE", "README.md", "Gemfile", "Docopted.gemspec"]
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "docopt"
-  spec.add_development_dependency "awesome_print"
-  spec.add_development_dependency "rspec-given"
-  spec.add_development_dependency "simplecov"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_dependency "docopt", ">= 0.6"
+  spec.add_development_dependency "awesome_print", ">= 1.8"
+  spec.add_development_dependency "rspec-given", ">= 3.8.0"
+  spec.add_development_dependency "simplecov", ">= 0.18.5"
+  spec.add_development_dependency "rspec", ">= 3.0"
 end
